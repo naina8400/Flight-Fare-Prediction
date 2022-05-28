@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Flight Fare Prediction</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/styles/styles1.css">
+</head>
+
+<!--{{ url_for('static', filename='styles.css') }}-->
+<body>
+	<div class="heading">
+    <h2 class="title" >Flight Fare Prediction</h2>
+	
+	</div>
+	<form method="POST" action="/predict">
+	<div class="Airline">
+	<!--<p> Choose Airline </p>-->
+		<select name="Airline" id="Airline" required>
+			<option value="">---Airline---</option>
+			<option value="Air Asia">Air Asia</option>
+			<option value="Air India">Air India</option>
+			<option value="GoAir">GoAir</option>
+			<option value="IndiGo">Indigo</option>
+			<option value="Jet Airways">Jet Airways</option>
+			<option value="Jet Airways Business">Jet Airways Business</option>
+			<option value="Multiple carriers">Multiple carriers</option>
+			<option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+			<option value="SpiceJet">SpiceJet</option>
+			<option value="Trujet">Trujet</option>
+			<option value="Vistara">Vistara</option>
+			<option value="Vistara Premium economy">Vistara Premium economy</option>
+			</select>	
+	</div>
+	<div class="Source">
+	<!--<h2>Source</h2>-->
+		<select name="Source" id="Source" required>
+			<option value="">---Source---</option>
+			<option value="Banglore">Banglore</option>
+			<option value="Chennai">Chennai</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Kolkata">Kolkata</option>
+			<option value="Mumbai">Mumbai</option>
+		</select>	
+	</div>
+	<div class="Destination">
+	<!--<h2>Destination</h2>-->
+		<select name="Destination" id="Destination" required>
+			<option value="">---Destination---</option>
+			<option value="Banglore">Banglore</option>
+			<option value="Cochin">Cochin</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Kolkata">Kolkata</option>
+			<option value="New Delhi">New Delhi</option>
+		</select>
+	</div>
+	<div class="Total_Stops">
+	<!--<h2>Total Stops</h2>-->
+		<select name="Total_Stops" id="Total_Stops" required>
+			<option value="0">non-stop</option>
+			<option value="1">1 stop</option>
+			<option value="2">2 stop</option>
+			<option value="3">3 stop</option>
+			<option value="4">4 stop</option>
+		</select>
+	</div>
+	<div class="Dates" id="Dates">
+	<p class="departure_p">Departure Date</p>
+		<input class="departure_input" type="datetime-local" id="Departure_Date" name="Departure_Date" required>
+	<p class="arrival_p">Arrival Date</p>
+		<input class="arrival_input" type="datetime-local" id="Arrival_Date" name="Arrival_Date" required>
+	</div>
+	<div class="submit_div">
+	<input type="submit" class="submit_button" value="Predict Fare">
+	</div>
+    </form>
+		<br>
+        <br>
+        <h3 align="center">{{ prediction_text }}</h3>
+
+        <br>
+        <br>
+    <div class="footer">
+		<a target="_blank" href="https://github.com/naina8400"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/naina-258b521a7/"><i class="fa fa-linkedin-square"></i></a>
+		<p class="footer_p"> Made with by Naina</p>
+	</div>
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+	crossorigin="anonymous"></script>
+</body>
+
+</html>
