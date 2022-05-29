@@ -60,7 +60,6 @@ def predict():
         # print(Total_stops)
 
         # Airline
-        # AIR ASIA = 0 (not in column)
         #Airline=request.form['Airline'] 
         if(Airline=='Jet Airways'):
             Jet_Airways = 1
@@ -242,8 +241,6 @@ def predict():
         #     Vistara_Premium_economy,
         #     Trujet)
 
-        # Source
-        # Banglore = 0 (not in column)
         #Source = request.form["Source"]
         if (Source == 'Banglore'):
             s_Delhi = 0
@@ -341,7 +338,7 @@ def predict():
             Arrival_min,
             dur_hour,
             dur_min,
-            Air_Asia,   ####
+            Air_Asia, 
             Air_India,
             GoAir,
             IndiGo,
@@ -353,12 +350,12 @@ def predict():
             Trujet,
             Vistara,
             Vistara_Premium_economy,
-            s_Banglore,   ###
+            s_Banglore,
             s_Chennai,
             s_Delhi,
             s_Kolkata,
             s_Mumbai,
-            d_Banglore, ###
+            d_Banglore,
             d_Cochin,
             d_Delhi,
             d_Hyderabad,
