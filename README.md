@@ -28,8 +28,8 @@ There are two datasets here: the training set and the test set.
 
 
 ## Screenshots
-![Screenshot_1](https://user-images.githubusercontent.com/66205648/170871029-526d78bd-3343-419e-b300-8c02654bf201.png)
-![Screenshot _2](https://user-images.githubusercontent.com/66205648/170871012-d50d2e63-89e7-46c8-9c03-12a4aeb2eb12.png)
+![Screenshot_1](https://user-images.githubusercontent.com/66205648/201348209-f962ee26-fff2-413f-bb8e-75269ac8d8e8.png)
+![Screenshot_2](https://user-images.githubusercontent.com/66205648/201348191-fbf8ea1d-ec7f-4c4b-8b41-dab2a6f2ca92.png)
 
 ## Demo Link
 https://fare-predict-app.herokuapp.com/
